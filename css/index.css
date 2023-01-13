@@ -1,0 +1,169 @@
+:root{
+    --main-color: hsl(300, 43%, 22%);
+    --second-color:hsl(333, 80%, 67%);
+    --p-color: hsl(303, 10%, 53%);
+}
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 15px;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+  
+   background-image:url(../images/bg-pattern-top-desktop.svg) ;
+   background-position:top left ;
+   background-image: url(../images/bg-pattern-bottom-desktop.svg);
+   background-position: bottom right;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+main{
+    width:76em ;
+    height: 42em;
+    display: grid;
+    grid-template-columns: repeat(3 , 33.33333%);
+    grid-template-rows: repeat(2 , 50%);
+   grid-template-areas: "one one one "  "card card card";
+}
+main    section.one {
+    grid-area:one;
+    width: 100%;
+    display: flex;
+}
+main   section.two {
+    grid-area: card;
+    display: flex;
+    justify-content: space-between;
+}
+main   section.one section:first-child{
+  width: 50%;
+}
+main   section.one section:first-child h1{
+font-size: 3.5em;
+margin-right: 4em;
+margin-top: 0;
+font-weight: 700;
+color: var(--main-color);
+}
+main   section.one section:first-child p{
+    margin-top: -1em;
+    margin-right: 14em;
+    color: var(--p-color);
+}
+main    section.one section:nth-child(2) div.rate div img{
+    margin-right: 5px;
+}
+
+main    section.one section:nth-child(2) div.rate{
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-around;
+    padding: 2em;
+    align-items: center;
+    width: 30em;
+    border-radius: 1em;
+    height: 4em;
+    font-weight: 700;
+    color: var(--main-color);
+
+}
+main   section.one section:nth-child(2) div.rate:nth-child(2){
+    margin-left: 3em;
+  
+}
+main   section.one section:nth-child(2) div.rate:nth-child(3){
+    margin-left: 6em;
+}
+main  section.two .card{
+    background-color:var(--main-color);
+    width: 24em;
+    height: 19em;
+    border-radius: 1em;
+}
+main   section.two .card .head{
+    display: flex;
+    margin: 2em ;
+    align-items: center;
+  
+}
+main   section.two .card h2{
+    display: inline;
+    color: white;
+    font-size: 1em;
+    margin-left: 2em;
+    line-height: 1.6;
+    font-weight: 500;
+}
+main   section.two .card img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+
+}
+main   section.two .head h2 span{
+    display: block;
+    color: var(--second-color);
+    font-weight: 400;
+}
+main  section.two .card
+ p{
+    line-height: 1.6;
+    margin: 0 2em;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+
+}
+main   section.two .card:nth-child(2){
+    margin-top: 1em;
+}
+main section.two .card:nth-child(3){
+    margin-top:2em ;
+}
+@media(max-width:375px){
+    main{
+        max-width: 25em;
+       height: 102em;
+        grid-template-columns:repeat(1 ,85em);
+        grid-template-rows: repeat(3 , minmax(55em , 1fr));
+        grid-template-areas:"one" "card" ;
+    }
+    main section.one {
+       flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+      main section.one section:first-child{
+        width: 100%;
+    }
+    main section.one section:first-child h1{
+       font-size: 5em;
+   text-align: center;
+   padding: 0 5em;
+   margin-top: 1em;
+        width: 100%;
+    }
+    main section.one section:first-child p{
+        width: 100%;
+    }
+    main section.one section:nth-child(2){
+        grid-area: rate;
+    }
+    main section.two {
+        flex-direction: column;
+    }
+    main section.one   section:nth-child(2) div.rate{
+        margin-left: 0;
+    } 
+    section.one , section.two{
+        width: 100%;
+    }
+}
