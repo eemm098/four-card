@@ -1,93 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css">
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Social proof section</title>
-  </head>
-  <body>
-   <main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    
-      <section class="one">
-      <section>
-        <h1>10,000+ of our users love our products.</h1>
-        <p>  We only provide great products combined with excellent customer service.
-          See what our satisfied customers are saying about our services.
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--main stylesheet file-->
+  <link href="css/index.css" rel="stylesheet">
+  <!--to render all the element-->
+  <link href="css/normalize.css">
+  <title>Frontend Mentor | Four card feature section</title>
+</head>
+<body> 
+ <main>
+  <!--start header-->
+  <div class="header">
+    <div class="container">
+      <h2>Reliable, efficient delivery
+       <span> Powered by Technology</span></h2>
+      <p>  Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful
       </p>
-      </section>
-      <section>
-        <div class="rate">
-          <div>
-            <img src="images/icon-star.svg" alt="">
-            <img src="images/icon-star.svg" alt="">
-            <img src="images/icon-star.svg" alt="">
-            <img src="images/icon-star.svg" alt="">
-            <img src="images/icon-star.svg" alt="">
-          </div>
-          <p>  Rated 5 Stars in Reviews</p>
-        </div>
-        <div class="rate">
-          <div>
-          <img src="images/icon-star.svg" alt="">
-          <img src="images/icon-star.svg" alt="">
-          <img src="images/icon-star.svg" alt="">
-          <img src="images/icon-star.svg" alt="">
-          <img src="images/icon-star.svg" alt="">
-        </div>
-        <p> Rated 5 Stars in Report Guru</p>
-      </div>
-      <div class="rate">
-        <div>
-        <img src="images/icon-star.svg" alt="">
-        <img src="images/icon-star.svg" alt="">
-        <img src="images/icon-star.svg" alt="">
-        <img src="images/icon-star.svg" alt="">
-        <img src="images/icon-star.svg" alt="">
-      </div>
-      <p> Rated 5 Stars in BestTech</p>
     </div>
-      </section>
-    </section>
-      <section class="two">
-        <div class="card">
-          <div class="head">
-          <img src="images/image-colton.jpg" alt="">
-          <h2>Colton Smith <span> Verified Buyer</span></h2>
-        </div>
-          <p>  "We needed the same printed design as the one we had ordered a week prior.
-            Not only did they find the original order, but we also received it in time.
-            Excellent!"
-        </p>
-        </div>
-        <div class="card">
-          <div class="head">
-          <img src="images/image-irene.jpg" alt="">
-          <h2> Irene Roberts <span>  Verified Buyer</span></h2>
-        </div>
-          <p>"Customer service is always excellent and very quick turn around. Completely
-            delighted with the simplicity of the purchase and the speed of delivery."
-        </p>
-        </div>
-        <div class="card">
-          <div class="head">
-          <img src="images/image-anne.jpg" alt="">
-          <h2> Anne Wallace <span>  Verified Buyer</span></h2>
-        </div>
-          <p>  "Put an order with this company and can only praise them for the very high
-            standard. Will definitely use them again and recommend them to everyone!"</p>
-        </div>
-      </section>
+  </div>
+  
+  <!--end header-->
+  <!-- content-->
+  <div class="content">
     
-   </main>
+      <div class="card one">
+        <h3>
+          Supervisor
+        </h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg" alt="">
+      </div>
+     <div>
+      <div class="card two">
+        <h3>  Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project
+        </p>
+        <img src="images/icon-team-builder.svg" alt="">
+      </div>
+      <br>
+      <div class="card three">
+        <h3>  Karma</h3>
+      <p>  Regularly evaluates our talent to ensure quality</p>
+      <img src="images/icon-karma.svg" alt="">
+     </div>
+     </div>
+     <div class="card four">
+      <h3>  Calculator</h3>
+        <p> 
+          Uses data from past projects to provide better delivery estimates</p>
+        <img src="images/icon-calculator.svg" alt="">
+     </div>
 
-  </body>
+    
+  </div>
+  <!-- end content-->
+ </main>
+</body>
 </html>
